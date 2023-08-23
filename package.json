@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
+  "jest": {
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  },
+  "devDependencies": {
     "jest": "^29.6.3"
   }
 }
